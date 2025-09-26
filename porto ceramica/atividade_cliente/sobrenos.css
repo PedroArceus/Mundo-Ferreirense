@@ -1,0 +1,122 @@
+ body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            background-color: #c6c5c5;
+            color: #333;
+        }
+
+        .header {
+            background-color: #4169E1; /* azul vibrante */
+            color: white;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: "Oxanium";
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .header .logo {
+            margin-left: 20px;
+        }
+
+        .header .logo img {
+            height: 50px; /* Tamanho da logo */
+            border-radius: 8px; /* Borda arredondada para a logo */
+        }
+
+        .header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-right: 20px;
+            font-family: "poppins";
+        }
+
+        .header nav ul li {
+            margin-left: 25px;
+        }
+
+        .header nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .header nav ul li a:hover {
+            color: #39ff14; /* CINZA */
+        
+        }
+
+        .header nav ul li a.active{
+            border-bottom: solid 1px #39ff14;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            gap: 20px;
+            flex-wrap: wrap; /* Permite que as colunas quebrem para a linha de baixo em telas menores */
+        }
+
+        .column {
+            background-color: #eaeaea;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            flex: 1; /* Permite que as colunas cresçam e encolham */
+            min-width: 280px; /* Largura mínima para as colunas */
+            text-align: center;
+        }
+
+        .column h3 {
+            color: #00bfff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-family: "oxanium";
+        }
+
+        .column p {
+            line-height: 1.6;
+            color: #777777;
+            font-family: "";
+        }
+
+        .column a p{
+            text-decoration: none;
+        }
+        
+        .column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #1a1a1a; /* Cinza escuro */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        h1{
+            font-family: "Oxanium";
+        }
+
+        

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Avenida do Comércio — Porto Ferreira | Guia Completo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#8b0000;
+      --accent-2:#ff1a1a;
+  background-color: #d7d7d7;
+      --bg:#;
+      --card:#ffffff;
+      --text:#222;
+    }
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+    header{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:white;
+      padding:18px 24px;
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    header h1{ margin:0; font-family:'Oxanium',sans-serif; font-size:1.3rem;}
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:14px;
+      font-weight:600;
+      text-transform:uppercase;
+      font-size:0.85rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover{ color:yellow; }
+    .container{ max-width:1100px; margin:28px auto; padding:0 18px;}
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 380px;
+      gap:20px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    }
+    .lead{ font-size:1.02rem; color:#444; line-height:1.6}
+    h2{ font-family:'Oxanium',sans-serif; color:var(--accent); margin-top:0}
+    .gallery{ display:flex; gap:8px; margin-top:12px }
+    .gallery img{ width:100%; border-radius:8px; object-fit:cover; }
+    .gallery .col{ flex:1; overflow:hidden; height:120px }
+    .info-list{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px}
+    .info-list li{ display:flex; gap:10px; align-items:flex-start }
+    .meta { font-weight:600; min-width:120px; color:#333; }
+    iframe.map{ border:0; width:100%; height:260px; border-radius:10px }
+    .section{ margin-top:20px }
+    .shops-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
+    .shop{ background:#fff; padding:10px; border-radius:10px; text-align:left; box-shadow:0 6px 14px rgba(0,0,0,0.04) }
+    .shop h4{ margin:6px 0; font-size:1rem; color:var(--accent) }
+    footer{ margin-top:28px; padding:20px; text-align:center; color:#666; font-size:0.9rem }
+    .btn{
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      padding:10px 16px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+    }
+    @media (max-width:900px){
+      .hero{ grid-template-columns:1fr; }
+      .gallery .col{ height:100px }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo" style="display:flex; align-items:center; gap:10px">
+    <img src="img/badeira porto.png" alt="Bandeira de Porto Ferreira" style="height:40px">
+    <h1 style="margin:0; font-family:'Oxanium',sans-serif; font-size:1.3rem">Avenida do Comércio</h1>
+  </div>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#onde-fica">Onde fica</a>
+    <a href="#o-que-ver">O que ver</a>
+    <a href="#dicas">Dicas</a>
+    <a href="lugares.html">Lugares</a>
+  </nav>
+</header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h2 id="sobre">Sobre a Avenida do Comércio</h2>
+        <p class="lead">
+          A Avenida do Comércio é o coração comercial de Porto Ferreira, reunindo lojas de diferentes segmentos, desde moda e calçados até móveis e decoração em madeira e cerâmica. É um ponto de encontro para moradores e visitantes que buscam compras, lazer e gastronomia em um só lugar.
+        </p>
+
+        <div class="gallery">
+          <div class="col"><img src="https://via.placeholder.com/400x200" alt="Avenida do Comércio vista principal"></div>
+          <div class="col"><img src="https://via.placeholder.com/400x200" alt="Lojas e vitrines na avenida"></div>
+        </div>
+
+        <div class="section">
+          <h3 id="o-que-ver">O que encontrar</h3>
+          <p class="lead">
+            A avenida concentra as principais lojas da cidade e oferece desde produtos locais artesanais até grandes marcas. Também é comum encontrar cafés, bares e restaurantes, tornando o passeio ainda mais agradável.
+          </p>
+          <div class="shops-grid">
+            <div class="shop">
+              <h4>Lojas de Moda</h4>
+              <p>Roupas, calçados e acessórios variados para todas as idades.</p>
+            </div>
+            <div class="shop">
+              <h4>Decoração & Cerâmica</h4>
+              <p>Peças tradicionais de Porto Ferreira e móveis artesanais.</p>
+            </div>
+            <div class="shop">
+              <h4>Cafés & Restaurantes</h4>
+              <p>Opções gastronômicas que vão do café rápido ao almoço em família.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 id="dicas">Dicas para aproveitar</h3>
+          <ul class="info-list">
+            <li><span class="meta">Melhor horário:</span> manhã e fim da tarde, quando o movimento é mais tranquilo.</li>
+            <li><span class="meta">Estacionamento:</span> vagas ao longo da avenida e ruas próximas.</li>
+            <li><span class="meta">Eventos:</span> datas comemorativas e feiras temáticas movimentam ainda mais a região.</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 id="onde-fica">Localização & mapa</h3>
+        <p><strong>Endereço:</strong><br>
+        Avenida do Comércio<br>
+        Centro — Porto Ferreira, SP</p>
+
+        <iframe class="map"
+          src="https://www.google.com/maps?q=Avenida+do+Comércio,+Porto+Ferreira&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <p style="margin-top:12px">
+          <a class="btn" href="https://www.google.com/maps/search/Avenida+do+Comércio+Porto+Ferreira" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </p>
+      </aside>
+    </section>
+
+    <footer class="card section">
+      <strong>Fontes e referências:</strong>
+      <p style="font-size:0.92rem; color:#555; margin:8px 0 0 0">
+        Conteúdo elaborado a partir de informações turísticas locais e observação da dinâmica comercial de Porto Ferreira. Para detalhes atualizados, consulte a prefeitura ou associações comerciais da cidade.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

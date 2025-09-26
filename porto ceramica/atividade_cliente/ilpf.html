@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Eu Amo Porto Ferreira — Praça da Matriz | Guia Completo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#8b0000;
+      --accent-2:#ff1a1a;
+  background-color: #d7d7d7;
+      --bg:#;
+      --card:#ffffff;
+      --text:#222;
+    }
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+    header{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:white;
+      padding:18px 24px;
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    header h1{ margin:0; font-family:'Oxanium',sans-serif; font-size:1.3rem;}
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:14px;
+      font-weight:600;
+      text-transform:uppercase;
+      font-size:0.85rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover{ color:yellow; }
+    .container{ max-width:1100px; margin:28px auto; padding:0 18px;}
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 380px;
+      gap:20px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    }
+    .lead{ font-size:1.02rem; color:#444; line-height:1.6}
+    h2{ font-family:'Oxanium',sans-serif; color:var(--accent); margin-top:0}
+    .gallery{ display:flex; gap:8px; margin-top:12px }
+    .gallery img{ width:100%; border-radius:8px; object-fit:cover; }
+    .gallery .col{ flex:1; overflow:hidden; height:120px }
+    .info-list{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px}
+    .info-list li{ display:flex; gap:10px; align-items:flex-start }
+    .meta { font-weight:600; min-width:120px; color:#333; }
+    iframe.map{ border:0; width:100%; height:260px; border-radius:10px }
+    .section{ margin-top:20px }
+    footer{ margin-top:28px; padding:20px; text-align:center; color:#666; font-size:0.9rem }
+    .btn{
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      padding:10px 16px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+    }
+    @media (max-width:900px){
+      .hero{ grid-template-columns:1fr; }
+      .gallery .col{ height:100px }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo" style="display:flex; align-items:center; gap:10px">
+    <img src="img/badeira porto.png" alt="Bandeira de Porto Ferreira" style="height:40px">
+    <h1 style="margin:0; font-family:'Oxanium',sans-serif; font-size:1.3rem">Eu amo Porto Ferreira</h1>
+  </div>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#onde-fica">Onde fica</a>
+    <a href="#o-que-ver">O que ver</a>
+    <a href="#dicas">Dicas</a>
+    <a href="lugares.html">Lugares</a>
+  </nav>
+</header>
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h2 id="sobre">Letreiro "Eu Amo Porto Ferreira"</h2>
+        <p class="lead">
+          O letreiro “Eu Amo Porto Ferreira”, instalado na Praça da Matriz, é um dos pontos turísticos mais visitados e fotografados da cidade. Além de simbolizar o carinho dos moradores pela cidade, tornou-se um cenário perfeito para registros de visitantes.
+        </p>
+
+        <div class="gallery">
+          <div class="col"><img src="https://via.placeholder.com/400x200" alt="Letreiro Eu Amo Porto Ferreira na Praça da Matriz"></div>
+          <div class="col"><img src="https://via.placeholder.com/400x200" alt="Visitantes tirando fotos no letreiro"></div>
+        </div>
+
+        <div class="section">
+          <h3 id="historia">História e significado</h3>
+          <p class="lead">
+            O letreiro foi inaugurado como parte de um projeto de valorização da identidade cultural e turística de Porto Ferreira. Desde então, tornou-se um marco de recepção calorosa e orgulho para moradores e turistas.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3 id="dicas">Dicas práticas</h3>
+          <ul class="info-list">
+            <li><span class="meta">Melhor horário:</span> fim de tarde, quando a iluminação natural favorece as fotos.</li>
+            <li><span class="meta">Entrada:</span> livre, em espaço público.</li>
+            <li><span class="meta">Fotografia:</span> perfeito para selfies e fotos em grupo.</li>
+            <li><span class="meta">Eventos:</span> a Praça da Matriz recebe apresentações culturais e religiosas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 id="onde-fica">Localização & mapa</h3>
+        <p><strong>Endereço:</strong><br>
+        Praça Cornélio Procópio (Praça da Matriz)<br>
+        Centro — Porto Ferreira, SP</p>
+
+        <iframe class="map"
+          src="https://www.google.com/maps?q=Praça+Cornélio+Procópio,+Porto+Ferreira&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <p style="margin-top:12px">
+          <a class="btn" href="https://www.google.com/maps/search/Praça+Cornélio+Procópio+Porto+Ferreira" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </p>
+      </aside>
+    </section>
+
+    <footer class="card section">
+      <strong>Fontes e referências:</strong>
+      <p style="font-size:0.92rem; color:#555; margin:8px 0 0 0">
+        Baseado em informações locais, registros turísticos e experiências de visitantes da Praça da Matriz em Porto Ferreira.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

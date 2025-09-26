@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rua dos Guarda-Chuvas Coloridos — Porto Ferreira | Guia Completo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#8b0000;
+      --accent-2:#ff1a1a;
+  background-color: #d7d7d7;
+      --bg:#;
+      --card:#ffffff;
+      --text:#222;
+    }
+
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    /* ======= HEADER ======= */
+    header.header{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:white;
+      padding:14px 24px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    header .logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    header .logo img{
+      height:40px;
+    }
+    header .logo h1{
+      margin:0;
+      font-family:'Oxanium',sans-serif;
+      font-size:1.2rem;
+    }
+
+    /* ======= NAV ======= */
+    nav#menu ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+      display:flex;
+      gap:20px;
+    }
+    nav#menu ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      text-transform:uppercase;
+      font-size:0.9rem;
+      transition: color 0.3s ease;
+    }
+    nav#menu ul li a.active{
+      text-decoration:underline;
+    }
+    nav#menu ul li a:hover{
+      color:yellow; /* efeito amarelo */
+    }
+
+    .container{ max-width:1100px; margin:28px auto; padding:0 18px;}
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 380px;
+      gap:20px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    }
+    .lead{ font-size:1.02rem; color:#444; line-height:1.6}
+    h2{ font-family:'Oxanium',sans-serif; color:var(--accent); margin-top:0}
+    .info-list{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px}
+    .info-list li{ display:flex; gap:10px; align-items:flex-start }
+    .meta { font-weight:600; min-width:120px; color:#333; }
+    iframe.map{ border:0; width:100%; height:260px; border-radius:10px }
+    .section{ margin-top:20px }
+    footer{ margin-top:28px; padding:20px; text-align:center; color:#666; font-size:0.9rem }
+    .btn{
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      padding:10px 16px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+      transition: background 0.3s ease;
+    }
+    .btn:hover{
+      background:var(--accent-2);
+    }
+    .gallery{ display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin-top:12px }
+    .gallery img{ width:100%; height:140px; object-fit:cover; border-radius:8px }
+    @media (max-width:900px){
+      .hero{ grid-template-columns:1fr; }
+      .gallery img{ height:120px }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img/badeira porto.png" alt="Bandeira de Porto Ferreira">
+      <h1>Mundo Ferreirense</h1>
+    </div>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Cerâmicas</a></li>
+        <li><a href="cadeira.html">Cadeiras</a></li>
+        <li><a href="lugares.html" class="active">Lugares</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h2 id="sobre">Sobre a Rua dos Guarda-Chuvas</h2>
+        <p class="lead">
+          A Rua dos Guarda-Chuvas Coloridos é um dos cenários mais fotogênicos de Porto Ferreira. O espaço ganhou fama ao receber uma instalação de guarda-chuvas suspensos, criando um corredor vibrante de cores que encanta moradores e turistas.
+        </p>
+
+        <div class="section">
+          <h3 id="historia">Origem e importância</h3>
+          <p class="lead">
+            Inspirada em projetos de arte urbana de cidades como Águeda (Portugal), a Rua dos Guarda-Chuvas surgiu como iniciativa de revitalização e valorização do espaço público. Além de atrair visitantes, tornou-se palco de eventos culturais e um símbolo de criatividade local.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3 id="dicas">Dicas práticas</h3>
+          <ul class="info-list">
+            <li><span class="meta">Melhor horário:</span> manhã e tarde, quando a luz natural realça as cores vibrantes.</li>
+            <li><span class="meta">Entrada:</span> gratuita, em espaço público aberto.</li>
+            <li><span class="meta">Fotografia:</span> ideal para fotos criativas, selfies e registros de viagem.</li>
+            <li><span class="meta">Eventos:</span> a rua recebe apresentações musicais, feiras e festivais de arte.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="gallery">
+            <!-- fotos podem ser adicionadas aqui -->
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 id="onde-fica">Endereço & mapa</h3>
+        <p><strong>Localização:</strong><br>
+        Rua dos Guarda-Chuvas Coloridos<br>
+        Região central — Porto Ferreira, SP<br>
+        CEP: 13660-000</p>
+
+        <iframe class="map"
+          src="https://www.google.com/maps?q=Porto+Ferreira,+Rua+dos+Guarda-Chuvas&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <p style="margin-top:12px">
+          <a class="btn" href="https://www.google.com/maps/search/Rua+dos+Guarda-Chuvas+Porto+Ferreira" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </p>
+
+        <div style="margin-top:14px">
+          <h4>Informações rápidas</h4>
+          <ul class="info-list">
+            <li><span class="meta">Tipo:</span> instalação de arte urbana</li>
+            <li><span class="meta">Local:</span> rua central, de fácil acesso</li>
+            <li><span class="meta">Acesso:</span> público e gratuito</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="card section">
+      <strong>Fontes e referências:</strong>
+      <p style="font-size:0.92rem; color:#555; margin:8px 0 0 0">
+        Baseado em registros turísticos locais, iniciativas culturais e experiências de visitantes.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

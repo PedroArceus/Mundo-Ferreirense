@@ -1,0 +1,147 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d7d7d7;
+  color: #333;
+}
+
+/* ===== Header ===== */
+.header {
+  background: linear-gradient(90deg, #8b0000, #ff1a1a);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .logo img {
+  height: 50px;
+  border-radius: 8px;
+}
+
+.header h1 {
+  font-family: 'Oxanium', sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* ===== Navegação ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* Menu hamburguer */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+.column {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+}
+
+.column:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.column h3 {
+  font-family: 'Oxanium', sans-serif;
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: inherit; /* Opcional: faz o link herdar a cor do texto pai */
+}
+
+.column p {
+  color: #555;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    width: 100%;
+  }
+  nav.active {
+    display: block;
+    margin-top: 15px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja - Prato Chique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #d7d7d7;
+      color: #333;
+    }
+
+    /* ===== Header ===== */
+    .header {
+      background: linear-gradient(90deg, #8b0000, #ff1a1a);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .header h1 {
+      font-family: 'Oxanium', sans-serif;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    /* ===== Navegação ===== */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #ffd700;
+      border-bottom: 2px solid #ffd700;
+    }
+
+    /* ===== Main Content ===== */
+    .main-content {
+      display: flex;
+      justify-content: center;
+      padding: 50px 20px;
+    }
+
+    .column {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .column h3 {
+      font-family: 'Oxanium', sans-serif;
+      color: #8b0000;
+      margin-bottom: 10px;
+    }
+
+    .column p {
+      color: #555;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background: #8b0000;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #ff1a1a;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Mundo Ferreirense</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html" class="active">Cerâmicas</a></li>
+        <li><a href="cadeira.html">Cadeiras</a></li>
+        <li><a href="lugares.html">Lugares</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="column">
+      <h3>Conjunto de pratos chiques</h3>
+      <p>Prato de cerâmica artesanal, acabamento refinado e design sofisticado. Ideal para compor mesas elegantes e dar um toque especial em qualquer ocasião.</p>
+      <a href="#" class="buy-btn" onclick="comprar()">Comprar agora</a>
+    </div>
+  </main>
+
+  <script>
+    function comprar(){
+      alert("Você clicou em comprar! Aqui poderia abrir o checkout de pagamento.");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Ferreirense</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stilo.css">
+  <style>
+    .buy-btn {
+      display: inline-block;
+      background: #8b0000;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 15px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .buy-btn:hover {
+      background: #ff1a1a;
+    }
+    .column {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      max-width: 300px;
+      margin: 15px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .column img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img/badeira porto.png" alt="Bandeira de Porto Ferreira">
+      <h1>Mundo Ferreirense</h1>
+    </div>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="produtos.html">Cerâmicas</a></li>
+        <li><a href="cadeira.html">Cadeiras</a></li>
+        <li><a href="lugares.html">Lugares</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="column">
+      <img src="imgcadeira/cadeira acapulcoc.jpg">
+      <h3>Cadeira de Acapulco</h3>
+      <p>Cadeira modelo acapulco, um dos principais tipos produzidas em Porto Ferreira</p>
+      <a href="#" class="buy-btn" onclick="comprar('Cadeira de Acapulco')">Comprar</a>
+    </div>
+
+    <div class="column">
+      <img src="imgcadeira/cadeira de escritório.png">
+      <h3>Cadeira de Escritório</h3>
+      <p>Cadeira de escritório design moderno e sofisticado</p>
+      <a href="#" class="buy-btn" onclick="comprar('Cadeira de Escritório')">Comprar</a>
+    </div>
+
+    <div class="column">
+      <img src="imgcadeira/cadeira de junco.jpg">
+      <h3>Cadeira de Junco</h3>
+      <p>Principal tipo de cadeira produzida em Porto Ferreira</p>
+      <a href="#" class="buy-btn" onclick="comprar('Cadeira de Junco')">Comprar</a>
+    </div>
+  </main>
+
+  <script>
+    function comprar(produto) {
+      alert("Você clicou em comprar: " + produto + "!\nAqui poderia abrir o checkout de pagamento.");
+    }
+  </script>
+</body>
+</html>

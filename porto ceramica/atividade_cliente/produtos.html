@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Ferreirense</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stilo.css">
+  <style>
+    .main-content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+    .column {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      max-width: 280px;
+    }
+    .column img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .column h3 {
+      margin: 10px 0;
+      font-family: 'Oxanium', sans-serif;
+      color: #8b0000;
+    }
+    .buy-btn {
+      display: inline-block;
+      background: #8b0000;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 15px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .buy-btn:hover {
+      background: #ff1a1a;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img/badeira porto.png" alt="Bandeira de Porto Ferreira">
+      <h1>Mundo Ferreirense</h1>
+    </div>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="produtos.html">Cerâmicas</a></li>
+        <li><a href="cadeira.html">Cadeiras</a></li>
+        <li><a href="lugares.html">Lugares</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="column">
+      <img src="imgprodutos/pexe.jpeg" alt="Avenida do Comércio em Porto Ferreira">
+      <h3>Cerâmicas divertidas</h3>
+      <p></p>
+      <a href="pratopeixe.html" class="buy-btn">Ver mais</a>
+    </section>
+
+    <section class="column">
+      <img src="imgprodutos/chique.jpg" alt="Letreiro Eu Amo Porto Ferreira">
+      <h3>Pratos</h3>
+      <p></p>
+      <a href="pratochique.html" class="buy-btn">Ver mais</a>
+    </section>
+
+    <section class="column">
+      <img src="imgprodutos/mobilia.jpg" alt="Ponte de Porto Ferreira">
+      <h3>Estátuas</h3>
+      <p></p>
+      <a href="estatua.html" class="buy-btn">Ver mais</a>
+    </section>
+  </main>
+</body>
+</html>
