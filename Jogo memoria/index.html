@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curaçao Memory Match</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <main class="experience">
+      <section class="menu-stage" id="menu-stage">
+        <section class="hero panel">
+          <div class="hero__brand">
+            <div class="hero__crest" aria-hidden="true">
+              <span class="hero__crest-core"></span>
+            </div>
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Curaçao National Football Team</p>
+              <h1>Desafio da Memoria no Gramado</h1>
+              <p class="hero__lead">
+                Entre em uma noite decisiva: encontre os pares em ate 8 minutos e registre seu tempo no ranking.
+              </p>
+            </div>
+          </div>
+
+          <form class="menu-form" id="menu-form">
+            <div class="menu-actions">
+              <div>
+                <p class="menu-story">
+                  Curacao estreou na Copa Ouro em 1969 e voltou a brilhar em 2017 e 2019 com uma geracao unida. Agora e a sua vez de manter a sequencia viva.
+                </p>
+                <label class="menu-form__label" for="menu-player-name">Digite seu nome para jogar</label>
+                <input
+                  id="menu-player-name"
+                  class="ranking-form__input menu-form__input"
+                  type="text"
+                  name="playerName"
+                  maxlength="18"
+                  autocomplete="nickname"
+                  placeholder="Seu nome"
+                  required
+                >
+              </div>
+              <button class="button button--primary" id="play-button" type="submit">
+                Jogar agora
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel panel--ranking">
+          <div class="panel__heading">
+            <p class="panel__kicker">Hall of Fame</p>
+            <h2>Top 5 melhores tempos</h2>
+          </div>
+
+          <p class="panel__note" id="ranking-note">
+            Ranking salvo no navegador (localStorage).
+          </p>
+
+          <ol class="ranking-list" id="ranking-list" aria-live="polite"></ol>
+        </section>
+      </section>
+
+      <section class="game-stage is-hidden" id="game-stage">
+        <aside class="dashboard">
+          <section class="panel panel--stats">
+            <div class="panel__heading">
+              <p class="panel__kicker">Performance</p>
+              <h2>Controle da partida</h2>
+            </div>
+
+            <div class="metrics">
+              <div class="metric metric--timer">
+                <span class="metric__label">Tempo restante</span>
+                <strong class="metric__value" id="timer">01:00</strong>
+                <span class="metric__sub">Seu tempo: <span id="elapsed">00:00</span></span>
+              </div>
+
+              <div class="metric">
+                <span class="metric__label">Tentativas</span>
+                <strong class="metric__value" id="moves">00</strong>
+              </div>
+
+              <div class="metric">
+                <span class="metric__label">Pares</span>
+                <strong class="metric__value" id="matches">0/6</strong>
+              </div>
+            </div>
+
+            <div class="status-panel">
+              <p class="hero__status-label">Match flow</p>
+              <p class="hero__status-text" id="status-text" aria-live="polite">
+                Clique em Jogar para iniciar.
+              </p>
+            </div>
+
+            <div class="dashboard__actions">
+              <button class="button button--primary" id="restart-button" type="button">
+                Reiniciar partida
+              </button>
+              <button class="button button--ghost" id="menu-button" type="button">
+                Voltar ao menu
+              </button>
+            </div>
+          </section>
+        </aside>
+
+        <section class="board-stage panel">
+          <div class="board-stage__heading">
+            <div>
+              <p class="panel__kicker">Arena Interativa</p>
+              <h2>Encontre os 6 pares</h2>
+            </div>
+          </div>
+
+          <div class="board-frame">
+            <div class="board" id="game-board" role="grid" aria-label="Tabuleiro do jogo da memoria"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="finish-modal" id="finish-modal" aria-hidden="true">
+      <div class="finish-modal__backdrop"></div>
+
+      <div class="finish-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="finish-title">
+        <p class="finish-modal__eyebrow">Partida concluída</p>
+        <h2 id="finish-title">A arena respondeu ao seu ritmo.</h2>
+        <p class="finish-modal__summary">
+          <span id="finish-label">Tempo final</span>
+          <strong id="final-time">00:00</strong>
+        </p>
+
+        <div class="finish-modal__ranking" id="finish-modal-ranking">
+          <p class="panel__kicker">Ranking</p>
+          <ol class="ranking-list ranking-list--modal" id="finish-ranking-list" aria-live="polite"></ol>
+        </div>
+
+        <button class="button button--ghost" id="modal-restart" type="button">
+          Jogar novamente
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
