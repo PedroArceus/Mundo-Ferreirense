@@ -1,0 +1,101 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container do Formulário */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+}
+
+/* Labels e Inputs */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-control, .form-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Grid System (Simulando o Bootstrap) */
+.col-md-6 { grid-column: span 6; }
+.col-md-4 { grid-column: span 4; }
+.col-md-2 { grid-column: span 2; }
+.col-12 { grid-column: span 12; }
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .col-md-6, .col-md-4, .col-md-2 {
+        grid-column: span 12;
+    }
+}
+
+/* Checkbox */
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Ajuste específico para o link que parece botão */
+a.btn-primary {
+    background-color: #6c757d;
+}
+
+a.btn-primary:hover {
+    background-color: #5a6268;
+}
